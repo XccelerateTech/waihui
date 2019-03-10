@@ -1,0 +1,44 @@
+.header {
+    background-image: url(./images/header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.about-background-color {
+    background-color: rgb(230, 147, 91);
+}
+
+.icons-background-color {
+    background-color: rgb(255, 255, 255);
+}
+
+.hr-line {
+    border-color: rgb(241, 117, 34);
+    max-width: 50px;
+    border-width: 3px;
+}
+
+.icon {
+    font-size: 80px;
+    color: rgb(241, 117, 34);
+}
+
+.icon-sub-title {
+    font-size: 20px;
+    margin: 5% 0;
+}
+
+.images-background-color {
+    background-color: rgb(49, 47, 46);
+}
+
+.contact-background-color {
+    background-color: rgb(255, 255, 255);
+}
