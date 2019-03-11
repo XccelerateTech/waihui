@@ -1,5 +1,5 @@
 .header {
-    background-image: url(./images/header.jpg);
+    background-image: url(../images/header.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -86,7 +86,7 @@ section {
 
 .para-content {
     font-size: 20px;
-    padding: 3%;
+    padding: 2% 0%;
 }
 
 .banner-title {
@@ -106,4 +106,25 @@ section {
     border-radius: 80px;
     font-weight: bolder;
     border: none;
+}
+
+.overlay {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.overlay:hover {
+    background-color: rgba(235, 85, 85, 0.7);
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
 }
