@@ -1,0 +1,191 @@
+body {
+    background: #151515 url('../images/bg.png') no-repeat fixed left bottom;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    font-family: Raleway, "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+}
+
+#header {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    box-sizing: border-box;
+    padding: 5px 0px;
+    height: 50px;
+}
+
+#logo {
+     margin: 0px 15px;
+}
+
+#image-logo {
+    background-size: auto;
+}
+
+
+li:hover {
+    background-color: rgb(120, 172, 154);
+    border-radius: 20px;
+}
+
+#welcome {
+    padding: 15% 0%;
+}
+
+.site-title-sub {
+    margin: 0 0 30px;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+
+.site-title {
+    margin: 50px 0 40px;
+    font-size: 4rem;
+}
+
+.site-description {
+    margin-bottom: 50px;
+    color: #888;
+    font-size: 1rem;
+}
+
+.button {
+    display: inline-block;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 4px;
+    background-color: #afa58d;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+.button:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.button-showy {
+    background-color: #D29E04;
+}
+
+.button-ghost {
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+section {
+    padding: 5% 0px 5%;
+}
+
+.fb-color {
+    color: rgb(53, 91, 181);
+}
+
+.google-color {
+    color: rgb(201, 73, 73);
+}
+
+.about-box,
+.skill-box {
+    padding: 20px;
+}
+
+.about-icon,
+.skill-icon {
+    font-size: 100px;
+}
+
+.html-color {
+    color: rgb(235, 148, 54);
+}
+
+.css-color {
+    color: rgb(235, 148, 54);
+}
+
+.css-color {
+    color: rgb(43, 69, 198);
+}
+
+.js-color {
+    color: rgb(55, 182, 74);
+}
+
+.sql-color {
+    color: rgb(133, 49, 53);
+}
+
+.skill-paragraph {
+    margin: 10%;
+    font-size: 30px;
+}
+
+.heading {
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+    margin: 5% auto 5%;
+    height: 5%;
+    padding: 0% 0% 0% 5%;
+    background-color: #161616;
+}
+
+.image-box {
+    padding: 0px;
+}
+
+.image-box:hover {
+    opacity: 0.5;
+}
+
+.image {
+    width: 100%
+}
+
+.contact-form {
+    width: 70%;
+    margin: 100px auto 0;
+}
+
+.contact-form input[type=text],
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #fff;
+}
+
+.contact-form input[type=text]:focus,
+.contact-form textarea:focus {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
+}
+
+.contact-form textarea {
+    height: 350px;
+}
+
+.contact-form input[type=submit] {
+    display: block;
+    width: 200px;
+    margin: 40px auto 0;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+.contact-form input[type=submit]:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
