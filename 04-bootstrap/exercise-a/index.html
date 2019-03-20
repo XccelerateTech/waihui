@@ -237,6 +237,25 @@
         })
 
 
+
+$(window).resiez(function() {
+    if (screen.width < 600) {
+        $('header').css({"position": "fixed", "top": "0"})
+    }
+    else {
+        $('header').css({"dispaly": "none"})
+    }
+})
+
+$(window).scroll(function() {
+    if ($(document).scrollTop() >50) {
+        $('header').css({"position": "fixed", "top": "0", "dispaly":"block"});
+    }
+    else {
+        $('header').css({"display": "none"});
+    }
+})
+
     </script>
 </body>
 
