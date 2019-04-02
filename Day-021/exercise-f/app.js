@@ -7,4 +7,4 @@ let computer = new Computer(referee);
 
 // the order of choosing is not a matter
 computer.randomChoose();
-user.choose('rock');
+user.choose('paper');

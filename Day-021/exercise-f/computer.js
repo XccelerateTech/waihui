@@ -4,9 +4,6 @@ class Computer extends EventEmitter {
     constructor(referee) {
         super();
         this.referee = referee;
-        // this.on('computerChoose', function() {
-        //     this.randomChoose();
-        // })
     }
     
     randomChoose() {
