@@ -1,0 +1,88 @@
+const fs = require('fs');
+
+let fileCount = 0;
+let directoryCount = 0;
+
+function statPromise(path) {
+    new Promise(function (resolve, reject) {
+        fs.stat(path, function (err, stats) {
+            if (err) {
+                reject(err);
+            }
+            else {
+                resolve(stats);
+            }
+        })
+    })
+    .then(function (result) {
+        if (result.isFile()) {
+            console.log(path + ' Is file');
+            fileCount++;
+        }
+        if (result.isDirectory()) {
+            console.log(path + ' Is directory');
+            readdirPromise(path);
+            directoryCount++;
+        }
+    })
+    .catch(function (error) {
+        throw error;
+    })
+    .finally(function() {
+        console.log('fileCount: ' + fileCount);
+        console.log('directoryCount: ' + directoryCount);
+    })
+    
+}
+
+function readdirPromise(pathname) {
+    new Promise(function (resolve, reject) {
+        fs.readdir(pathname, function (err, files) {
+            if (err) {
+                reject(err);
+            }
+            else {
+                let fullPathArray = []
+                for (let i = 0; i < files.length; i++) {
+                    fullPathArray.push(pathname + '\\' + files[i]);
+                }
+                resolve(fullPathArray);
+            }
+        })
+
+    })
+    .then(function (result) {
+        for (let i = 0; i < result.length; i++) {
+            statPromise(result[i]);
+        }
+    })
+    .catch(function (error) {
+        throw error;
+    })
+}
+
+readdirPromise(__dirname);
+
+
+
+
+
+
+// let bool = true;
+// const prmoise = new Promise(function(resolve, reject) {
+//     if (bool === true) {
+//         resolve('OK');
+//     }
+//     else {
+//         reject('Not OK');
+//     }
+// })
+// .then(function(result) {
+//     console.log(result);
+// })
+// .catch(function(resultError) {
+//     console.log(resultError);
+// })
+// .finally(function() {
+//     console.log('the finish')
+// })
